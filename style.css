@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    color :white;
+    text-align: center;
+}
+h1 {
+    margin-top: 200px;
+    font-size: 50px; 
+}
+
+/* Nossa bolinha animada */
+#bola {
+    width: 50px;
+    height: 50px;
+    background-color: hotpink;
+    border-radius: 50%;
+    margin: 50px auto;
+
+    animation: mover 2s infinite alternate;
+}
+
+@keyframes mover { /*define como animacao acontece*/
+    from { /* de onde comeca*/
+        transform: translateX(-100px);
+    }
+
+    to { /*onde ela termina*/
+        transform: translateX(100px);
+    }
+}
